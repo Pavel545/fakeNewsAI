@@ -100,6 +100,16 @@ class Model:
         plt.show()
 
 
+        # Дополнительно: Матрица путаницы
+        cm = confusion_matrix(Y, predictions, labels=labels)
+        disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=labels)
+        disp.plot(cmap=plt.cm.Blues)
+        plt.title('Матрица путаницы')
+        plt.show()
+
+
+
+
 
 
         
